@@ -11,6 +11,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AiPhotoshoot } from "@/components/AiPhotoshoot";
+import { useReveal } from "@/hooks/use-reveal";
 import { Route, Routes } from "react-router-dom";
 
 function HomePage() {
