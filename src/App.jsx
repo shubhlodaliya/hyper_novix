@@ -11,10 +11,10 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AiPhotoshoot } from "@/components/AiPhotoshoot";
-import { useReveal } from "@/hooks/use-reveal";
 import { Route, Routes } from "react-router-dom";
 
 function HomePage() {
+  useReveal();
   return (
     <main className="relative z-10">
       <Hero />
@@ -31,7 +31,6 @@ function HomePage() {
 }
 
 export default function App() {
-  useReveal();
   return (
     <div className="relative min-h-screen overflow-hidden">
       <CursorGlow />
