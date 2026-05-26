@@ -14,6 +14,10 @@ export function Process() {
     <section id="process" className="relative py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="reveal mx-auto max-w-2xl text-center">
+          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-muted-foreground">
+            <Rocket className="h-3.5 w-3.5 text-neon-cyan" />
+            Delivery Engine
+          </div>
           <h2 className="text-4xl font-bold sm:text-5xl">
             A process that <span className="text-gradient">moves</span>
           </h2>

@@ -14,6 +14,10 @@ export function WhyUs() {
     <section className="relative py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="reveal mx-auto max-w-2xl text-center">
+          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-muted-foreground">
+            <Wand2 className="h-3.5 w-3.5 text-neon-cyan" />
+            Why HyperNovix
+          </div>
           <h2 className="text-4xl font-bold sm:text-5xl">
             Why teams <span className="text-gradient">choose HyperNovix</span>
           </h2>

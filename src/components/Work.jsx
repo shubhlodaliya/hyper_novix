@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 
 const projects = [
   { t: "Nebula Banking App", c: "FinTech · Mobile", tag: "iOS / Android", grad: "from-neon-blue/40 to-neon-purple/40" },
@@ -16,6 +16,7 @@ export function Work() {
         <div className="reveal flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-muted-foreground">
+              <Sparkles className="h-3.5 w-3.5 text-neon-cyan" />
               Selected Work
             </div>
             <h2 className="mt-5 text-4xl font-bold sm:text-5xl">
