@@ -12,7 +12,8 @@ import { Footer } from "@/components/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AiPhotoshoot } from "@/components/AiPhotoshoot";
 import { useReveal } from "@/hooks/use-reveal";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function HomePage() {
   useReveal();
@@ -32,6 +33,17 @@ function HomePage() {
 }
 
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+    const id = location.hash.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location]);
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <CursorGlow />
