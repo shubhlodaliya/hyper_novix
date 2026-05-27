@@ -11,6 +11,9 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AiPhotoshoot } from "@/components/AiPhotoshoot";
+import { AboutPage } from "@/components/AboutPage";
+import { Blog } from "@/components/Blog";
+import { BlogPost } from "@/components/BlogPost";
 import { useReveal } from "@/hooks/use-reveal";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -50,6 +53,9 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/ai-photoshoot" element={<AiPhotoshoot />} />
       </Routes>
       <Footer />

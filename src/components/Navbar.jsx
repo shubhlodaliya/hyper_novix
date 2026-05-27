@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { Menu, X, Sparkles } from "lucide-react";
 
 const links = [
-  { to: "/#about", label: "About" },
+  { to: "/about", label: "About" },
   { to: "/#services", label: "Services" },
   { to: "/#work", label: "Work" },
   { to: "/#process", label: "Process" },
   { to: "/#tech", label: "Tech" },
   { to: "/#contact", label: "Contact" },
+  { to: "/blog", label: "Blog" },
 ];
 
 export function Navbar() {
